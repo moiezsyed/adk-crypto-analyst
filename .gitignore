@@ -1,0 +1,11 @@
+__pycache__/
+.env
+data/
+notebooks/*.ipynb.checkpoints
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite3
+*.log
