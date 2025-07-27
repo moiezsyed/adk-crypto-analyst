@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  crypto-analyst:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name : crypto-analyst
+    ports:
+      - "8000:8000"
+    command: bash -c "uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload"
+    volumes:
+      - .:/app
+      - ./data:/app/data
+    env_file:
+      - .env
+    environment:
+      - GENAI_API_KEY=${GENAI_API_KEY}
+      - COINGECKO_API_KEY=${COINGECKO_API_KEY}
+      - CRYPTOCOMPARE_API_KEY=${CRYPTOCOMPARE_API_KEY}
