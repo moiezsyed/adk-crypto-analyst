@@ -9,3 +9,4 @@ notebooks/*.ipynb.checkpoints
 *.db
 *.sqlite3
 *.log
+.venv/
