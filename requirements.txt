@@ -28,9 +28,6 @@ python-dotenv==1.0.0
 # web ui
 streamlit==1.28.0
 
-# database
-sqlite3==3.41.2
-
 # web scraping
 beautifulsoup4==4.12.2
 
