@@ -29,11 +29,8 @@ python-dotenv==1.0.0
 fastapi==0.116.1
 uvicorn==0.35.0
 
-# web scraping
-beautifulsoup4==4.12.2
+# llm web scraping
+crawl4ai==0.7.2
 
 # testing
 pytest==8.4.1
-
-# rate limiting
-ratelimit==2.2.1
